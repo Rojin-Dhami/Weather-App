@@ -1,83 +1,58 @@
-🌤️ PyQt5 Weather App
-A simple and elegant desktop weather application built with Python and PyQt5, using the OpenWeatherMap API. Enter a city name and get the current temperature, weather emoji, and description.
+# 🌤️ PyQt5 Weather App
 
-📸 Preview
+A simple and stylish desktop weather application built with **Python** and **PyQt5**, powered by the **OpenWeatherMap API**.
 
-🚀 Features
-Enter city name and fetch real-time weather.
+## 🚀 Features
 
-Displays temperature in Celsius.
+- Real-time weather information by city name
+- Displays:
+  - Temperature in Celsius
+  - Weather condition with emoji
+  - Weather description (e.g., "clear sky", "light rain")
+- Graceful error handling for invalid input or API issues
+- Modern and clean user interface using Qt Stylesheets
 
-Visual weather representation using emojis.
+## 🛠️ Requirements
 
-Handles API errors and connection issues gracefully.
+- Python 3.7 or higher
+- PyQt5
+- requests
 
-Stylish, centered UI using PyQt5 layout and stylesheet.
+## 📦 Installation
 
-🛠️ Requirements
-Python 3.7+
-
-PyQt5
-
-requests
-
-📦 Installation
-bash
-Copy
-Edit
-# Create and activate a virtual environment (optional)
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
+```bash
 pip install PyQt5 requests
-🔑 Get Your API Key
-Go to OpenWeatherMap
+```
 
-Sign up and get your API key
+## 🔑 API Key Setup
 
-Replace the API key in the code:
+1. Sign up at [OpenWeatherMap](https://openweathermap.org/api) to get a free API key.
+2. In the code, replace this line with your actual API key:
 
-python
-Copy
-Edit
+```python
 api_key = "YOUR_API_KEY_HERE"
-🧪 How to Run
-bash
-Copy
-Edit
+```
+
+## 🧪 How to Run
+
+```bash
 python weather_app.py
-💡 Example Usage
-Run the app.
+```
 
-Enter a city name like London, Delhi, or Tokyo.
+## 💡 How It Works
 
-Click Get Weather.
+- Enter a city name in the input box.
+- Click the **"Get Weather"** button.
+- The app fetches weather data using the OpenWeatherMap API and displays:
+  - Temperature
+  - A relevant emoji
+  - A short description of the current weather
 
-View temperature, emoji, and weather description.
+## 📂 File Structure
 
-📂 File Structure
-bash
-Copy
-Edit
-weather_app.py       # Main application script
+```
+weather_app.py       # Main application file
 README.md            # Project documentation
-🧯 Error Handling
-Handles various network and API errors such as:
+```
 
-Invalid city names
 
-Invalid API keys
-
-Server timeouts
-
-No internet connection
-
-🎨 UI Design
-Built with PyQt5 using QVBoxLayout and styled using Qt stylesheets:
-
-Large fonts
-
-Emoji support via Segoe UI Emoji
-
-Center-aligned widgets
